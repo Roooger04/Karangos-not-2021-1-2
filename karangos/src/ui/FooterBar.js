@@ -11,7 +11,11 @@ const useStyles = makeStyles((theme) => ({
     },
     Toolbar: {
         backgroundColor: theme.palette.background.paper,
-        minHeight: '42px'
+        minHeight: '42px',
+        // Posicionando a barra no rodapé da pagina
+        width: '100%',
+        position: 'fixed',
+        bottom: 0
     },
     link: {
         color: theme.palette.secondary.light,

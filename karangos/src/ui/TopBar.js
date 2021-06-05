@@ -2,9 +2,8 @@ import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
-import IconButton from '@material-ui/core/IconButton';
-import MenuIcon from '@material-ui/icons/Menu'
 import logo from '../img/karangos.png'
+import MainMenu from './MainMenu'
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -25,9 +24,7 @@ export default function TopBar() {
         <div className={classes.root}>
             <AppBar position="static">
                 <Toolbar>
-                    <IconButton edge="start" className={classes.menuButton} color="inherit" arial-label="menu">
-                        <MenuIcon />
-                    </IconButton>
+                    <MainMenu />
                     <img src={logo} className={classes.logo} alt="Logotipo Karangos" />
                 </Toolbar>
             </AppBar>
