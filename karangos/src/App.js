@@ -80,6 +80,13 @@ function Main() {
               <Route path="/cliente">
                 <ClienteForm />
               </Route>
+              {/* :id é um parametro (nomes de parametros começam com dois pontos) */}
+              <Route path="/edit/:id">
+                <KarangosForm />
+              </Route>
+              <Route path="/edita/:id">
+                <ClienteForm />
+              </Route>
             </Switch>
           </Box>
           <FooterBar />

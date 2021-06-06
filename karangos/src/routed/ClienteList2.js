@@ -164,7 +164,7 @@ export default function ClientesList() {
       headerAlign: 'center', 
       flex: true,
       renderCell: params => (
-        <IconButton aria-label="editar">
+        <IconButton aria-label="editar" onClick={() => history.push(`/edita/${params.id}`)}>
           <EditIcon />
         </IconButton>
       )
@@ -186,7 +186,7 @@ export default function ClientesList() {
   return (
     <>
       <ConfirmDialogo isOpen={dialogOpen} onClose={handleDialogClose}>
-        Deseja realmente excluir este karango?
+        Deseja realmente excluir este cliente?
       </ConfirmDialogo>
       
       <Snackbar open={sbOpen} autoHideDuration={6000} onClose={handleSbClose}>
